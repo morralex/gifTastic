@@ -1,5 +1,7 @@
 # gifTastic
 
+https://morralex.github.io/gifTastic/
+
 This is an application that demonstrates the usage of API's
 
 * first we have an array of buttons that when called upon, searches the Giphy API and places gifs related to the button on the page.
