@@ -9,7 +9,7 @@ $('.blah').on('click', function (e) {
     const input = this.innerText
     console.log(input)
 
-    axios.get('http://api.giphy.com/v1/gifs/search?q=' + input + '&api_key=whXzdI25neJRlcvNEGsfKSdWNrcCJPpp&limit=10')
+    axios.get('http://api.giphy.com/v1/gifs/search?q=' + input + '&api_key=whXzdI25neJRlcvNEGsfKSdWNrcCJPpp&limit=10&rating=G')
         .then(function (response) {
             const gifs = response.data.data;
             // console.log(gifs)
@@ -37,7 +37,7 @@ $('#submit').on('click', function (e) {
         // console.log(e)
         const intxt = this.innerText
         console.log(intxt)
-        axios.get('http://api.giphy.com/v1/gifs/search?q=' + userInput + '&api_key=whXzdI25neJRlcvNEGsfKSdWNrcCJPpp&limit=10')
+        axios.get('http://api.giphy.com/v1/gifs/search?q=' + userInput + '&api_key=whXzdI25neJRlcvNEGsfKSdWNrcCJPpp&limit=10&rating=G')
             .then(function (response) {
                 console.log(response.data)
                 const gifs = response.data.data;
